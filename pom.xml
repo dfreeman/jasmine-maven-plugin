@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>com.github.searls</groupId>
 	<artifactId>jasmine-maven-plugin</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.1.0.1-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>jasmine-maven-plugin</name>
@@ -27,8 +27,8 @@
 			<id>searls</id>
 			<name>Justin Searls</name>
 			<email>searls@gmail.com</email>
-			<organization>Pillar Technology Group</organization>
-			<organizationUrl>http://pillartechnology.com</organizationUrl>
+			<organization>Test Double</organization>
+			<organizationUrl>http://testdouble.com</organizationUrl>
 		</developer>
 	</developers>
 	<scm>
@@ -83,10 +83,10 @@
 			<version>1.1.1</version>
 		</dependency>
 		<dependency>
-			<groupId>net.sourceforge.htmlunit</groupId>
-			<artifactId>htmlunit</artifactId>
-			<version>2.8</version>
-		</dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>2.11.0</version>
+    </dependency>
 		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>stringtemplate</artifactId>
@@ -112,7 +112,7 @@
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
 		</dependency>
-		
+
 		<!-- Plugin test deps -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -193,7 +193,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
